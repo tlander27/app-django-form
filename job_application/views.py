@@ -47,3 +47,7 @@ def index(request):
             messages.success(request, f"Thank you, {first_name}! Your application has been submitted!")
 
     return render(request, "index.html")
+
+
+def about(request):
+    return render(request, 'about.html')
