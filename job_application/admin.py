@@ -8,7 +8,7 @@ class FormAdmin(admin.ModelAdmin):
     search_fields = ("first_name", "last_name", "email")
     list_filter = ("start_date", "position")
     ordering = ("last_name", )
-    readonly_fields = ("start_date", )
+    # readonly_fields = ("start_date", )
 
 
 # Registers the form data available in admin interface

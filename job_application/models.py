@@ -11,6 +11,7 @@ class Form(models.Model):
     start_date = models.DateField()
     date_created = models.DateField(auto_now_add=True)
     date_modified = models.DateField(auto_now=True)
+    file = models.FileField(upload_to='resumes')
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+        return f"{self.first_name}"

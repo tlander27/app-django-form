@@ -8,4 +8,6 @@ class ApplicationForm(forms.Form):
     position = forms.CharField(max_length=50)
     status = forms.CharField(max_length=50)
     start_date = forms.DateField()
+    file = forms.FileField()
+
 
