@@ -17,7 +17,6 @@ def index(request):
             position = form.cleaned_data["position"]
             status = form.cleaned_data["status"]
             start_date = form.cleaned_data["start_date"]
-            # new_file = Form(file=request.FILES['file'])
             new_file = request.FILES['file']
             default_storage.save(new_file.name, new_file)
 
